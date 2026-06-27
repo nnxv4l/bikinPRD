@@ -47,7 +47,7 @@ export function OutputPreviewSection() {
         variants={slideUpVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ margin: "-100px" }}
         className="text-center max-w-[800px] mx-auto mb-16"
       >
         <h2 className="text-[32px] sm:text-[36px]  font-medium text-ink leading-tight mb-4">
@@ -61,7 +61,7 @@ export function OutputPreviewSection() {
       <motion.div
         initial={{ opacity: 0, y: 50, scale: 0.96 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        viewport={{ once: true, margin: "-80px" }}
+        viewport={{ margin: "-80px" }}
         transition={{ duration: 0.8, ease }}
         className="bg-pure-white border border-dove/20 rounded-[24px] overflow-hidden shadow-subtle max-w-[1000px] mx-auto"
       >
@@ -70,7 +70,7 @@ export function OutputPreviewSection() {
           <motion.button
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ delay: 0.4 }}
             className="flex items-center gap-2 px-6 py-4 text-[14px] font-semibold text-ink border-b-2 border-ink bg-pure-white"
           >
@@ -79,7 +79,7 @@ export function OutputPreviewSection() {
           <motion.button
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ delay: 0.5 }}
             className="flex items-center gap-2 px-6 py-4 text-[14px] font-medium text-ash hover:bg-black/5 transition-colors"
           >
@@ -95,7 +95,7 @@ export function OutputPreviewSection() {
             variants={contentStagger}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ margin: "-50px" }}
           >
             <div className="prose prose-sm max-w-none text-ink ">
               <motion.div variants={contentItem}>
@@ -123,7 +123,7 @@ export function OutputPreviewSection() {
                       className="flex gap-3"
                       initial={{ opacity: 0, x: -10 }}
                       whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
+                      viewport={{}}
                       transition={{ duration: 0.4, delay: 0.5 + i * 0.1 }}
                     >
                       <CheckCircle2 className="w-5 h-5 text-rust shrink-0 mt-0.5" />
@@ -153,7 +153,7 @@ export function OutputPreviewSection() {
             variants={contentStagger}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ margin: "-50px" }}
           >
             <motion.div variants={sidebarItem} className="bg-fog rounded-xl p-6 border border-dove/20 mb-6">
               <h3 className="text-[14px] font-bold text-ink uppercase tracking-wider mb-4">Tech Stack</h3>

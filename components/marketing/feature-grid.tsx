@@ -74,7 +74,7 @@ export function FeatureGrid() {
         <motion.div
           initial={{ opacity: 0, y: 30, filter: "blur(4px)" }}
           whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ margin: "-100px" }}
           transition={{ duration: 0.7, ease }}
           className="text-center max-w-[800px] mx-auto mb-16"
         >
@@ -88,7 +88,7 @@ export function FeatureGrid() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ margin: "-50px" }}
         >
           {features.map((feature, index) => (
             <motion.div
@@ -109,7 +109,7 @@ export function FeatureGrid() {
                 className="absolute top-6 right-6"
                 initial={{ opacity: 0, scale: 0.7 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.4, delay: 0.3 + index * 0.05 }}
               >
                 <span className={`px-3 py-1 rounded-full text-[11px] font-semibold uppercase tracking-wider ${feature.badgeColor}`}>

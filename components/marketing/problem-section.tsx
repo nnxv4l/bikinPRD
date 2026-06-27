@@ -24,7 +24,7 @@ export function ProblemSection() {
         <motion.div
           initial={{ opacity: 0, y: 30, filter: "blur(4px)" }}
           whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ margin: "-100px" }}
           transition={{ duration: 0.7, ease }}
           className="text-center max-w-[700px] mx-auto mb-16"
         >
@@ -36,7 +36,7 @@ export function ProblemSection() {
           </p>
         </motion.div>
 
-        <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}>
+        <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ margin: "-50px" }}>
           {[
             { icon: <Clock className="w-5 h-5" />, title: "Memakan Waktu", desc: "Menulis PRD manual dari awal sangat lambat. Anda terjebak memikirkan format daripada logika produk.", bg: "bg-apricot-wash" },
             { icon: <ListX className="w-5 h-5" />, title: "Ide Tercerai-berai", desc: "Ide di kepala sulit diterjemahkan jadi dokumen runtut. Sering lupa memikirkan struktur database.", bg: "bg-sky-wash" },
@@ -52,7 +52,7 @@ export function ProblemSection() {
               <motion.div
                 initial={{ rotate: -10, scale: 0.8 }}
                 whileInView={{ rotate: 0, scale: 1 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.5, delay: 0.2 + index * 0.1, ease }}
                 className={`w-10 h-10 rounded-[12px] flex items-center justify-center mb-5 text-ink ${item.bg}`}
               >

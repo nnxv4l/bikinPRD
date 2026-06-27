@@ -35,7 +35,7 @@ const steps = [
 
 function TimelineLine() {
   const ref = React.useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-20%" })
+  const isInView = useInView(ref, { margin: "-20%" })
 
   return (
     <div ref={ref} className="absolute left-[24px] md:left-1/2 top-0 bottom-0 -translate-x-1/2 md:block hidden">
@@ -56,7 +56,7 @@ export function HowItWorksSection() {
       <motion.div
         initial={{ opacity: 0, y: 30, filter: "blur(4px)" }}
         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ margin: "-100px" }}
         transition={{ duration: 0.7, ease }}
         className="text-center max-w-[800px] mx-auto mb-16"
       >
@@ -75,7 +75,7 @@ export function HowItWorksSection() {
               key={index}
               initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
+              viewport={{ margin: "-80px" }}
               transition={{ duration: 0.7, delay: 0.15, ease }}
               className={`flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-12 ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
             >
@@ -103,7 +103,7 @@ export function HowItWorksSection() {
                 <motion.div
                   initial={{ scale: 0, rotate: -90 }}
                   whileInView={{ scale: 1, rotate: 0 }}
-                  viewport={{ once: true }}
+                  viewport={{}}
                   transition={{ duration: 0.5, delay: 0.3, ease, type: "spring", stiffness: 200, damping: 15 }}
                   className="w-10 h-10 bg-ink text-pure-white rounded-full flex items-center justify-center relative"
                 >
@@ -113,7 +113,7 @@ export function HowItWorksSection() {
                     className="absolute inset-0 rounded-full border-2 border-graphite/30"
                     initial={{ scale: 1, opacity: 0.6 }}
                     whileInView={{ scale: 1.6, opacity: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{}}
                     transition={{ duration: 0.8, delay: 0.5 }}
                   />
                 </motion.div>
@@ -123,7 +123,7 @@ export function HowItWorksSection() {
               <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
-                viewport={{ once: true }}
+                viewport={{}}
                 transition={{ duration: 0.4, delay: 0.2, type: "spring", stiffness: 200 }}
                 className="w-10 h-10 bg-ink text-pure-white rounded-full flex items-center justify-center md:hidden mb-2 -mt-4"
               >

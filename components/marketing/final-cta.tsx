@@ -12,7 +12,7 @@ export function FinalCTASection() {
       <motion.div
         initial={{ opacity: 0, y: 40, scale: 0.92, filter: "blur(6px)" }}
         whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
-        viewport={{ once: true, margin: "-50px" }}
+        viewport={{ margin: "-50px" }}
         transition={{ duration: 0.8, ease }}
         className="relative"
       >
@@ -37,7 +37,7 @@ export function FinalCTASection() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.6, delay: 0.2, ease }}
             className="text-[32px] sm:text-[40px]  font-bold text-ink leading-tight mb-6 max-w-[700px] mx-auto"
           >
@@ -47,7 +47,7 @@ export function FinalCTASection() {
           <motion.p
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.6, delay: 0.35, ease }}
             className="text-[14px] md:text-[16px] text-ink/80  leading-relaxed max-w-[600px] mx-auto mb-10"
           >
@@ -57,7 +57,7 @@ export function FinalCTASection() {
           <motion.div
             initial={{ opacity: 0, y: 10, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{}}
             transition={{ duration: 0.5, delay: 0.5, ease }}
             className="flex justify-center"
           >

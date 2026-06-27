@@ -10,7 +10,7 @@ export function Footer() {
     <motion.footer
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true, margin: "-30px" }}
+      viewport={{ margin: "-30px" }}
       transition={{ duration: 0.6, ease }}
       className="border-t border-dove/20 py-12 px-4 sm:px-6 lg:px-8 bg-pure-white"
     >
@@ -18,7 +18,7 @@ export function Footer() {
         <motion.div
           initial={{ opacity: 0, x: -15 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{}}
           transition={{ duration: 0.5, delay: 0.1, ease }}
           className="flex flex-col items-center md:items-start gap-2"
         >
@@ -33,7 +33,7 @@ export function Footer() {
         <motion.nav
           initial={{ opacity: 0, x: 15 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{}}
           transition={{ duration: 0.5, delay: 0.2, ease }}
           className="flex gap-6"
         >
